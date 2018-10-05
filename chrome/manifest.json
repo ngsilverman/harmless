@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Clear Patterns",
+  "name": "Harmless",
   "version": "1.0",
   "description": "Modifies the interface of popular websites to be more compassionate towards users.",
   "permissions": ["activeTab"],
@@ -19,12 +19,13 @@
     {
       "matches": ["*://*.reddit.com/*"],
       "css": [
-        "reddit/reddit.css"
+        "reddit/pagination.css",
+        "reddit/overlay.css"
       ],
       "js": [
         "thirdparty/jquery-3.3.1.min.js",
         "thirdparty/jquery.initialize.min.js",
-        "reddit/reddit.js"
+        "reddit/pagination.js"
       ]
     }
   ]

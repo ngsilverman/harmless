@@ -23,7 +23,7 @@ $(function() {
 
     // Insert the "show next" element at the correct position on initial load.
     if (index == visibleItemCount) {
-      $(this).before($('#clear-patterns-show-next'));
+      $(this).before($('#harmless-show-next'));
     }
 
     // Hide posts until the user explicitly clicks on "show next" element.
@@ -36,11 +36,11 @@ $(function() {
 });
 
 function initializeShowNextElementIfNeeded() {
-  if ($('#clear-patterns-show-next').length == 0) {
+  if ($('#harmless-show-next').length == 0) {
     // Add the "show next" element to the DOM. We'll insert it at the correct place later.
-    $('body').append('<div id="clear-patterns-show-next"><a href="#">Show next posts.</a></div>');
+    $('body').append('<div id="harmless-show-next"><a href="#">Show next posts.</a></div>');
 
-    $('#clear-patterns-show-next a').click(function(event) {
+    $('#harmless-show-next a').click(function(event) {
       // Prevents the browser from going back to the top of the page.
       event.preventDefault();
 
@@ -50,7 +50,7 @@ function initializeShowNextElementIfNeeded() {
       nextPosts.css('display', 'block');
 
       // Move the "show next" element to the end of the visible posts.
-      nextPosts.last().after($('#clear-patterns-show-next'));
+      nextPosts.last().after($('#harmless-show-next'));
 
       visibleItemCount += ITEMS_PER_PAGE;
     });

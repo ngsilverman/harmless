@@ -3,12 +3,12 @@
   display: none;
 }
 
-#clear-patterns-show-next {
+#harmless-show-next {
   padding: 16px 0;
 }
 
-#clear-patterns-show-next a {
-  color: #2ECC40;
+#harmless-show-next a {
+  color: #85144b; /* Maroon from https://clrs.cc/ */
   font-weight: bold;
   text-decoration: underline;
 }
