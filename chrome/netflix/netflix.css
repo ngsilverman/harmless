@@ -1,0 +1,6 @@
+/* Makes the "Back to Browse" button more visible. */
+.svg-icon-bvuiExit {
+  width: 26.4em !important;
+  height: 26.4em !important;
+  fill: #2ECC40 !important; /* Green from https://clrs.cc/ */
+} 

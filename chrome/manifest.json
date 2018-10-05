@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Clear Patterns",
+  "version": "1.0",
+  "default_locale": "en",
+  "description": "Modifies the interface of popular websites to be more compassionate towards users.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.netflix.com/*"],
+      "css": [
+        "netflix/netflix.css"
+      ],
+      "js": [
+        "thirdparty/jquery-3.3.1.min.js",
+        "thirdparty/jquery.initialize.min.js",
+        "netflix/netflix.js"
+      ]
+    }
+  ]
+}
