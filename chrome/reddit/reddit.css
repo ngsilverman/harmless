@@ -1,0 +1,14 @@
+/* The loading posts. */
+.exLocu {
+  display: none;
+}
+
+#clear-patterns-show-next {
+  padding: 16px 0;
+}
+
+#clear-patterns-show-next a {
+  color: #2ECC40;
+  font-weight: bold;
+  text-decoration: underline;
+}
